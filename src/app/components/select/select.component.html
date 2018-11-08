@@ -1,0 +1,25 @@
+<div class="container" [@slideInOut]>
+  <div class="card border-dark mb-3">
+    <div class="card-header">Select CSV files:</div>
+    <div class="card-body">
+      <app-messages></app-messages>
+      <form #uploadForm="ngForm" (ngSubmit)="submitForm()">
+        <div class="form-group mb-3">
+          <app-file-picker id="webwork-file"
+                           label="WeBWorK CSV file (e.g. MATH252-13752_totals.csv):"
+                           tinyLabel="Obtained from Scoring Tools in WeBWorK."
+                           [onChange]="handleWebworkInput">
+          </app-file-picker>
+        </div>
+        <div class="form-group mb-3">
+          <app-file-picker id="canvas-file"
+                           label="Canvas CSV file (e.g. 2018-10-05T1359_Marks-MATH_252.csv):"
+                           tinyLabel="Your canvas Gradebook."
+                           [onChange]="handleCanvasInput">
+          </app-file-picker>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>

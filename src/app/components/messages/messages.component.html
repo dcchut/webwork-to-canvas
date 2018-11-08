@@ -1,0 +1,6 @@
+<div *ngFor="let message of messageService.messages" class="alert alert-warning alert-dismissible fade show" role="alert" [@slideInOut]>
+  <div [innerHTML]="message.text"></div>
+  <button type="button" class="close" (click)="deleteMessage(message)" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>

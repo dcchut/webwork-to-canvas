@@ -1,0 +1,36 @@
+<div class="container" [@slideInOut]>
+  <div class="card border-dark mb-3">
+    <div class="card-header">Select grading columns:</div>
+    <div class="card-body">
+      <app-messages></app-messages>
+      <form [formGroup]="columnForm">
+        <div class="form-group">
+          <label for="webworkColumn">WeBWorK column:</label>
+          <select class="form-control" id="webworkColumn" required formControlName="webworkColumn">
+            <option *ngFor="let col of webworkColumns" [value]="col">{{col}}</option>
+          </select>
+          <small class="form-text text-muted">This is the column in WeBWorK where grades will taken from.</small>
+        </div>
+        <div class="form-group">
+          <label for="canvasColumn">Canvas column:</label>
+          <select class="form-control" id="canvasColumn" required formControlName="canvasColumn">
+            <option *ngFor="let col of canvasColumns" [value]="col">{{col}}</option>
+          </select>
+          <small class="form-text text-muted">This is the column in Canvas where grades will be entered.</small>
+        </div>
+        <div class="form-group">
+          <label for="crn">CRN(s):</label>
+          <select class="custom-select crn" id="crn" size="{{crnList?.length}}" required multiple formControlName="crns">
+            <option *ngFor="let crn of crnList" [value]="crn">{{crn}}</option>
+          </select>
+          <small class="form-text text-muted">Select those CRN that you would like to upload grades for.</small>
+        </div>
+        <button type="submit" class="btn btn-primary mr-2" (click)="submitForm()">Download</button>
+        <button type="submit" class="btn btn-primary" (click)="restart()">Restart</button>
+      </form>
+    </div>
+  </div>
+</div>
+<!--
+ <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+-->
