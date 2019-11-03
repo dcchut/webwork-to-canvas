@@ -3,7 +3,7 @@ import {NgModule} from '@angular/core';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
-import {PapaParseModule} from 'ngx-papaparse';
+
 import {ColumnsComponent} from './components/columns/columns.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {SelectComponent} from './components/select/select.component';
@@ -22,7 +22,6 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    PapaParseModule,
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule
