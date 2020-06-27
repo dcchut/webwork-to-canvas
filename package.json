@@ -19,7 +19,7 @@
     "@angular/forms": "~10.0.0",
     "@angular/platform-browser": "~8.2.13",
     "@angular/platform-browser-dynamic": "~10.0.0",
-    "@angular/router": "~8.2.13",
+    "@angular/router": "~10.0.1",
     "core-js": "^3.3.6",
     "ngx-papaparse": "^4.0.4",
     "rxjs": "~6.5.3",
