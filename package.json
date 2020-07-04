@@ -22,7 +22,7 @@
     "@angular/router": "~10.0.1",
     "core-js": "^3.3.6",
     "ngx-papaparse": "^4.0.4",
-    "rxjs": "~6.5.3",
+    "rxjs": "~6.6.0",
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
