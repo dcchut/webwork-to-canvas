@@ -21,7 +21,7 @@
     "@angular/platform-browser-dynamic": "~10.1.0",
     "@angular/router": "~10.1.0",
     "core-js": "^3.3.6",
-    "ngx-papaparse": "^4.0.4",
+    "ngx-papaparse": "^5.0.0",
     "rxjs": "~6.6.0",
     "zone.js": "~0.9.1"
   },
